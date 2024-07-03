@@ -1,0 +1,93 @@
+
+GET http://localhost:8000/api/ok/
+
+###
+GET http://localhost:8000/api/timeout
+
+###
+
+GET http://localhost:8000/api/users?limit=4
+
+###
+
+GET http://localhost:8000/api/metrics
+
+###
+GET http://localhost:8000/api/
+
+###
+GET http://localhost:8000/api/users/
+
+###
+
+GET http://localhost:8000/api/users/1
+
+###
+
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{   
+    "fullname": "John Doe 2",
+    "phone": "+2541872",
+    "address": "Nairobi, Kenya",
+    "email" : "email2@gmail.com"
+}
+
+###
+
+PUT http://localhost:8000/api/users/110
+Content-Type: application/json
+
+{
+    "fullname": "Kevin"
+}
+###
+DELETE http://localhost:8000/api/users/"9"
+
+
+###
+
+GET http://localhost:8000/api/profiles/
+
+###
+
+POST  http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "username": "jane",
+    "password": "pass",
+    "role": "admin"
+}
+
+###
+
+POST  http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "jane",
+    "password": "pass"
+}
+
+### DEPLOYED
+
+###
+
+POST  https://socialmedia-teach2give.azurewebsites.net/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "jane",
+    "password": "pass"
+}
+
+
+###
+
+GET http://localhost:8000/api/users
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqYW5lIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzE4MTA3NTYyfQ.FuJ1W9SAAsQNB6AXYNUSsJOp5xT8WaqF-TV0bUZJY9o
+
+
